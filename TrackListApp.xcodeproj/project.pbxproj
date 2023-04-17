@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C656C4B129EDB3C30007FAF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656C4B029EDB3C30007FAF7 /* AppDelegate.swift */; };
 		C656C4B329EDB3C30007FAF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656C4B229EDB3C30007FAF7 /* SceneDelegate.swift */; };
-		C656C4B529EDB3C30007FAF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656C4B429EDB3C30007FAF7 /* ViewController.swift */; };
 		C656C4B829EDB3C30007FAF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C656C4B629EDB3C30007FAF7 /* Main.storyboard */; };
 		C656C4BA29EDB3C40007FAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C656C4B929EDB3C40007FAF7 /* Assets.xcassets */; };
 		C656C4BD29EDB3C40007FAF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C656C4BB29EDB3C40007FAF7 /* LaunchScreen.storyboard */; };
+		C656C4C529EDBB940007FAF7 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656C4C429EDBB940007FAF7 /* TrackListViewController.swift */; };
+		C656C4C729EDBF4C0007FAF7 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656C4C629EDBF4C0007FAF7 /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C656C4AD29EDB3C30007FAF7 /* TrackListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C656C4B029EDB3C30007FAF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C656C4B229EDB3C30007FAF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C656C4B429EDB3C30007FAF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C656C4B729EDB3C30007FAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C656C4B929EDB3C40007FAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C656C4BC29EDB3C40007FAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C656C4BE29EDB3C40007FAF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C656C4C429EDBB940007FAF7 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		C656C4C629EDBF4C0007FAF7 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C656C4B029EDB3C30007FAF7 /* AppDelegate.swift */,
 				C656C4B229EDB3C30007FAF7 /* SceneDelegate.swift */,
-				C656C4B429EDB3C30007FAF7 /* ViewController.swift */,
+				C656C4C429EDBB940007FAF7 /* TrackListViewController.swift */,
+				C656C4C629EDBF4C0007FAF7 /* Track.swift */,
 				C656C4B629EDB3C30007FAF7 /* Main.storyboard */,
 				C656C4B929EDB3C40007FAF7 /* Assets.xcassets */,
 				C656C4BB29EDB3C40007FAF7 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C656C4B529EDB3C30007FAF7 /* ViewController.swift in Sources */,
 				C656C4B129EDB3C30007FAF7 /* AppDelegate.swift in Sources */,
 				C656C4B329EDB3C30007FAF7 /* SceneDelegate.swift in Sources */,
+				C656C4C529EDBB940007FAF7 /* TrackListViewController.swift in Sources */,
+				C656C4C729EDBF4C0007FAF7 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
