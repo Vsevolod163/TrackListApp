@@ -13,7 +13,7 @@ final class TrackListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.rowHeight = 120
         
     }
     
@@ -30,10 +30,14 @@ extension TrackListViewController {
         trackList.count
     }
     
-    func tableView(_ tableView: UITableView, callForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "track", for: indexPath)
-        
-        
+        var content = cell.defaultContentConfiguration()
+        let track = trackList[indexPath.row]
+        content.text = track.song
+        content.secondaryText = track.artist
+        content.image = UIImage(named: track.title)
+        cell.contentConfiguration = content
         
         return cell
     }
