@@ -20,7 +20,10 @@ final class TrackListViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let track = trackList[indexPath.row]
+        let detailsVC = segue.destination as? TrackDetailsViewController
+        detailsVC?.track = track
     }
 }
 
@@ -37,6 +40,7 @@ extension TrackListViewController {
         content.text = track.song
         content.secondaryText = track.artist
         content.image = UIImage(named: track.title)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         
         return cell

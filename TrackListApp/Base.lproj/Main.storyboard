@@ -3,6 +3,7 @@
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kl1-H5-Hhk" kind="show" id="HXT-UE-AWa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +39,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iac-YG-kOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="740" y="-66"/>
+        </scene>
+        <!--Track Info-->
+        <scene sceneID="IRz-Yg-9fn">
+            <objects>
+                <viewController id="kl1-H5-Hhk" customClass="TrackDetailsViewController" customModule="TrackListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKy-kL-2OG">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="uAa-cq-CLE">
+                                <rect key="frame" x="16" y="175" width="398" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="isj-me-qIa">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="297.66666666666669"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgf-vR-NeW">
+                                        <rect key="frame" x="0.0" y="354.66666666666663" width="398" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="xPO-ur-hac"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GIm-hg-kU7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GIm-hg-kU7" firstAttribute="trailing" secondItem="uAa-cq-CLE" secondAttribute="trailing" constant="16" id="2k6-FD-Bge"/>
+                            <constraint firstItem="uAa-cq-CLE" firstAttribute="leading" secondItem="GIm-hg-kU7" secondAttribute="leading" constant="16" id="i2m-Pt-GbF"/>
+                            <constraint firstItem="uAa-cq-CLE" firstAttribute="top" secondItem="GIm-hg-kU7" secondAttribute="top" constant="20" id="xSV-Je-xcm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Track Info" id="Wjm-n0-mAY"/>
+                    <connections>
+                        <outlet property="artCoverImageView" destination="isj-me-qIa" id="Xhh-Zo-3yc"/>
+                        <outlet property="trackTitleLabel" destination="kgf-vR-NeW" id="A72-eo-Kve"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Oc-EQ-kp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="-66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xQY-wI-rj0">
