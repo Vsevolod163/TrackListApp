@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TrackDetailsViewController: UIViewController {
+final class TrackDetailsViewController: UIViewController {
 
     @IBOutlet var artCoverImageView: UIImageView!
     @IBOutlet var trackTitleLabel: UILabel!
